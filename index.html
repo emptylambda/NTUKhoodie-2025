@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺大附設幼稚園 2025 冬季限定帽踢</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">臺大附幼冬季帽踢</h1>
+            <nav>
+                <a href="#products">Collection</a>
+                <a href="#about">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Simple, Soft, Sustainable</h2>
+                <p>Clothes for your little one's big adventures.</p>
+            </div>
+        </section>
+
+        <section id="products" class="container product-gallery">
+            <h3 class="section-title">Our Collection</h3>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="hoodie.png" alt="Organic Cotton Onesie">                    
+                    <h4>Organic Cotton Onesie</h4>
+                    <p class="price">$22.00</p>
+                    <button class="interest-button" data-product="Organic Cotton Onesie">覺得讚！</button>
+                </div>
+                
+                <div class="product-card">
+                    
+                    <img src="hoodie2.png" alt="Organic Cotton Onesie">                    
+                    <h4>Linen Button-Up Shirt</h4>
+                    <p class="price">$28.00</p>
+                    <button class="interest-button" data-product="Linen Button-Up Shirt">覺得讚！</button>
+                </div>
+                
+                <div class="product-card">
+                    
+                    <img src="hoodie3.png" alt="Organic Cotton Onesie">                    
+                    <h4>Soft-Knit Joggers</h4>
+                    <p class="price">$25.00</p>
+                    <button class="interest-button" data-product="Soft-Knit Joggers">覺得讚！</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="hoodie4.png" alt="Organic Cotton Onesie">                    
+                    <h4>Reversible Sun Hat</h4>
+                    <p class="price">$18.00</p>
+                    <button class="interest-button" data-product="Reversible Sun Hat">覺得讚！</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="hoodie5.png" alt="Organic Cotton Onesie">                    
+                    <h4>Reversible Sun Hat</h4>
+                    <p class="price">$18.00</p>
+                    <button class="interest-button" data-product="Reversible Sun Hat">覺得讚！</button>
+                </div>
+                <div class="product-card">
+                    <img src="hoodie6.png" alt="Organic Cotton Onesie">                    
+                    <h4>Reversible Sun Hat</h4>
+                    <p class="price">$18.00</p>
+                    <button class="interest-button" data-product="Reversible Sun Hat">覺得讚！</button>
+                </div>
+                <div class="product-card">
+                    <img src="hoodie7.png" alt="Organic Cotton Onesie">                    
+                    <h4>Reversible Sun Hat</h4>
+                    <p class="price">$18.00</p>
+                    <button class="interest-button" data-product="Reversible Sun Hat">覺得讚！</button>
+                </div>
+                <div class="product-card">
+                    <img src="hoodie8.png" alt="Organic Cotton Onesie">                    
+                    <h4>Reversible Sun Hat</h4>
+                    <p class="price">$18.00</p>
+                    <button class="interest-button" data-product="Reversible Sun Hat">覺得讚！</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="container about-section">
+            <h3 class="section-title">About Little Sprout</h3>
+            <p>We believe in quality over quantity. Our clothes are made from the softest organic materials, designed to be comfortable, durable, and kind to the planet. Based in [Your City], we're a small brand with a big heart.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 臺大設幼家委會. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="survey-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Purchase Intention Survey</h3>
+            <p>You're interested in the <strong id="modal-product-name">Product</strong>! Please let us know who you are, and we'll get in touch about your order.</p>
+            
+            <form id="intention-form" action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <input type="hidden" id="product-name-input" name="product_name" value="">
+                
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" rows="3"></textarea>
+                
+                <button type="submit" class="submit-button">Send My Interest</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
